@@ -1,7 +1,7 @@
 ; RxD ModPack Installer Compiler SCript
 
 #define MyAppName "RXD - ModPack"
-#define MyAppVersion "1.5-5"
+#define MyAppVersion "2.0-9.0"
 #define MyAppPublisher "RXD - MODS"
 #define MyAppURL "https://rxd-mods.pages.dev"
 #define MyAppExeName "wotblitz.exe"
@@ -23,7 +23,7 @@ DefaultGroupName={#MyAppName}
 AllowNoIcons=yes
 ; Remove the following line to run in administrative install mode (install for all users.)
 PrivilegesRequired=lowest
-OutputBaseFilename=RxD-ModPack-Installer
+OutputBaseFilename=rxd-modpack-autoinstaller_2.0-9.0-src-steam-blitz
 SetupIconFile=E:\Github\RXD-MODPACK-PROJ\docs\RxD.ico
 Compression=lzma
 SolidCompression=yes
@@ -60,7 +60,6 @@ Name: "ukrainian"; MessagesFile: "compiler:Languages\Ukrainian.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "E:\Github\RXD-MODPACK-PROJ\src-steam\CREW_M_F"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "E:\Github\RXD-MODPACK-PROJ\src-steam\World of Tanks Blitz\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "E:\Github\RXD-MODPACK-PROJ\src-steam\MustReadMeBeforeInstalling.txt"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
